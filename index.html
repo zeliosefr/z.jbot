@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty City RP</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Icônes -->
+</head>
+<body>
+    <header>
+        <div class="glass-navbar">
+            <div class="logo">
+                <img src="./image/logo.jpg" alt="Logo" class="logo-icon">
+                <span class="logo-text">Liberty City RP</span>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="regle.html">Règles</a></li>
+                    <li><a href="texture.html">Texture du serveur</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="team.html">Notre équipe</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="https://discord.gg/57v8cZf" class="icon-link"><i class="fab fa-discord"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-moon"></i></a>
+            </div>
+            <div class="burger-menu"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h1 class="fade-in">Plongez dans l'Aventure!</h1>
+                <p class="fade-in delay-1">Rejoignez notre serveur pour des expériences inoubliables dans Emergency Response: Liberty County!</p>
+                <img src="image/Liberty.jpg" alt="Bannière du Serveur" class="banner fade-in delay-2">
+                <a href="https://discord.gg/57v8cZf" class="join-button pulse">Rejoignez notre Discord</a>
+            </div>
+        </section>
+
+        <section class="presentation-section">
+            <h2 class="fade-in">À propos de notre serveur</h2>
+            <p class="fade-in delay-1">Notre serveur ERLC RP offre une expérience immersive et captivante. Devenez un héros, que ce soit en tant que policier, pompier ou civil.</p>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2 class="fade-in">Galerie d'Images</h2>
+            <div class="image-gallery">
+                <img src="image/controle.jpg" alt="Contrôle routier" class="hover-zoom">
+                <img src="image/defiler.jpg" alt="Défilé de voitures" class="hover-zoom">
+                <img src="image/feu.jpg" alt="Intervention des pompiers" class="hover-zoom">
+                <img src="image/voiture_garer.jpg" alt="Voiture garée" class="hover-zoom">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <center>
+        <p>© 2023-2024 Liberty City RP. Tous droits réservés.</p></center>
+    </footer>
+    <script>
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navbar = document.querySelector('.navbar');
+
+        burgerMenu.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

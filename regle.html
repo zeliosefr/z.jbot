@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty City RP</title>
+    <link rel="stylesheet" href="./styles/regle.css">
+    <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Icônes -->
+</head>
+<body>
+    <header>
+        <div class="glass-navbar">
+            <div class="logo">
+                <img src="./image/logo.jpg" alt="Logo" class="logo-icon">
+                <span class="logo-text">Liberty City RP</span>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="regle.html">Règles</a></li>
+                    <li><a href="texture.html">Texture du serveur</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="team.html">Notre équipe</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="https://discord.gg/57v8cZf" class="icon-link"><i class="fab fa-discord"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-moon"></i></a>
+            </div>
+            <div class="burger-menu"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="rules-section">
+            <!-- Bannière au-dessus -->
+            <div class="banner-container">
+                <img src="./image/Liberty_regle_1.jpg" alt="Bannière du serveur" class="banner">
+            </div>
+    
+            <h1 class="fade-in">Règles du Serveur</h1>
+            <p class="fade-in delay-1">Pour garantir une expérience agréable à tous, merci de respecter les règles suivantes :</p>
+            <ul class="rules-list fade-in delay-2">
+                <li>Respectez les autres joueurs, ainsi que l'équipe de modération.</li>
+                <br>
+                <li>Pas de comportements toxiques ou de langage vulgaire.</li>
+                <br>
+                <li>Suivez les scénarios RP et évitez le "fail RP".</li>
+                <br>
+                <li>Le "meta-gaming" et "power-gaming" sont interdits.</li>
+                <br>
+                <li>Ne quittez pas une scène RP sans raison valable.</li>
+            </ul>
+        </section>
+    </main>
+    
+
+    <footer>
+        <center>
+        <p>© 2023-2024 Liberty City RP. Tous droits réservés.</p></center>
+    </footer>
+    <script>
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navbar = document.querySelector('.navbar');
+
+        burgerMenu.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
