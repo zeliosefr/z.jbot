@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z.J Bot - Bot Communautaire</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Icônes -->
+</head>
+<body>
+    <header>
+        <div class="glass-navbar">
+            <div class="logo">
+                <img src="./image/logo.jpg" alt="Logo" class="logo-icon">
+                <span class="logo-text">Z.J Bot</span>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="fonctionalités.html">Fonctionnalités</a></li>
+                    <li><a href="notre-equipe.html">Notre équipe</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="https://discord.gg/57v8cZf" class="icon-link"><i class="fab fa-discord"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-moon"></i></a>
+            </div>
+            <div class="burger-menu"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h1 class="fade-in">Découvrez Z.J Bot</h1>
+                <p class="fade-in delay-1">Un bot Discord polyvalent pour améliorer votre expérience communautaire.</p>
+                <img src="image/bot-banner.jpg" alt="Bannière du bot Z.J" class="banner fade-in delay-2">
+                <a href="https://discord.gg/57v8cZf" class="join-button pulse">Ajoutez Z.J Bot à votre serveur</a>
+            </div>
+        </section>
+
+        <section class="presentation-section">
+            <h2 class="fade-in">Pourquoi choisir Z.J Bot ?</h2>
+            <p class="fade-in delay-1">Z.J Bot vous offre une expérience complète avec des fonctionnalités avancées, des commandes intuitives, et un support 24/7 pour votre communauté.</p>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2 class="fade-in">Fonctionnalités Principales</h2>
+            <div class="image-gallery">
+                <img src="image/music.jpg" alt="Commandes musicales" class="hover-zoom">
+                <img src="image/moderation.jpg" alt="Outils de modération" class="hover-zoom">
+                <img src="image/fun.jpg" alt="Commandes fun" class="hover-zoom">
+                <img src="image/custom.jpg" alt="Personnalisation" class="hover-zoom">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <center>
+            <p>© 2023-2024 Z.J Bot. Tous droits réservés. | <a href="https://discord.gg/57v8cZf">Rejoignez notre serveur de support</a></p>
+        </center>
+    </footer>
+    <script>
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navbar = document.querySelector('.navbar');
+
+        burgerMenu.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
