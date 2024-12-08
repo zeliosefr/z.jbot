@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Z.J Bot</title>
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Icônes -->
+</head>
+<body>
+    <header>
+        <div class="glass-navbar">
+            <div class="logo">
+                <img src="./image/logo.jpg" alt="Logo" class="logo-icon">
+                <span class="logo-text">Z.J Bot</span>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="fonctionalites.html.html">Fonctionnalités</a></li>
+                    <li><a href="notre-equipe.html">Notre équipe</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="https://discord.gg/57v8cZf" class="icon-link"><i class="fab fa-discord"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-moon"></i></a>
+            </div>
+            <div class="burger-menu"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+    <div class="burger-menu-overlay"></div>
+    <!-- Bannière Personnalisée -->
+    <div class="custom-banner">
+        <img src="./image/contact.png" alt="Bannière Contact Z.J Bot">
+        <div class="banner-text">
+            <h1>Contactez Z.J Bot</h1>
+            <p>Support rapide et dédié pour toutes vos questions.</p>
+        </div>
+    </div>
+
+    <main>
+        <section id="contact" class="contact-section">
+            <h2>Formulaire de Contact</h2>
+            <p>Pour toute question ou support concernant Z.J Bot, n'hésitez pas à nous contacter via le formulaire ci-dessous.</p>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" placeholder="Votre message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Envoyer</button>
+            </form>
+            <p id="statusMessage" style="margin-top: 10px; color: green; display: none;">Message envoyé avec succès !</p>
+        </section>
+    </main>
+
+    <footer>
+        <center>
+            <p>© 2023-2024 Z.J Bot. Tous droits réservés. | <a href="https://discord.gg/57v8cZf">Rejoignez notre serveur de support</a></p>
+        </center>
+    </footer>
+    <script>
+        const form = document.getElementById('contactForm');
+        const statusMessage = document.getElementById('statusMessage');
+        
+        // Remplacez cette URL par votre Webhook Discord
+        const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1312788182131146816/dx6r73Frb__mFhkXw1KKJqMhUKUtXY1YYjdmqgVZiUJSL80pdIh5GKnABNOWIDmrSqxa";
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Empêche le rechargement de la page
+
+            // Récupération des données du formulaire
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Construction du payload pour Discord
+            const payload = {
+                content: null,
+                embeds: [
+                    {
+                        title: "Nouveau Message de Contact",
+                        description: message,
+                        color: 3447003,
+                        fields: [
+                            { name: "Nom", value: name, inline: true },
+                            { name: "Email", value: email, inline: true }
+                        ],
+                        footer: {
+                            text: "Message envoyé depuis la page Contact de Z.J Bot",
+                        }
+                    }
+                ]
+            };
+
+            try {
+                // Envoi des données via fetch
+                const response = await fetch(DISCORD_WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload),
+                });
+
+                if (response.ok) {
+                    // Succès : afficher un message
+                    statusMessage.textContent = "Message envoyé avec succès !";
+                    statusMessage.style.display = "block";
+                    form.reset(); // Réinitialise le formulaire
+                } else {
+                    throw new Error("Erreur lors de l'envoi du message.");
+                }
+            } catch (error) {
+                // Erreur : afficher un message
+                statusMessage.textContent = "Échec de l'envoi. Veuillez réessayer.";
+                statusMessage.style.color = "red";
+                statusMessage.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>

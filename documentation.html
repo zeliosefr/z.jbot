@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Z.J Bot</title>
+    <link rel="stylesheet" href="./styles/documenation.css">
+    <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="glass-navbar">
+            <div class="logo">
+                <img src="./image/logo.jpg" alt="Logo" class="logo-icon">
+                <span class="logo-text">Z.J Bot</span>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="fonctionalites.html.html">Fonctionnalités</a></li>
+                    <li><a href="notre-equipe.html">Notre équipe</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="custom-banner">
+        <img src="./image/documentation-banner.jpg" alt="Bannière Documentation Z.J Bot">
+        <div class="banner-text">
+            <h1>Documentation de Z.J Bot</h1>
+            <p>Explorez toutes les commandes slash pour gérer et modérer votre serveur Discord.</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="intro">
+            <h2>Bienvenue dans la Documentation de Z.J Bot</h2>
+            <p>Z.J Bot est un bot de modération puissant et facile à utiliser, conçu pour aider les administrateurs de serveurs Discord à gérer et modérer leurs communautés. Découvrez ci-dessous toutes les commandes slash pour maintenir l'ordre sur votre serveur.</p>
+        </section>
+
+        <section class="installation">
+            <h2>Installation</h2>
+            <p>Pour ajouter Z.J Bot à votre serveur Discord, suivez les étapes suivantes :</p>
+            <ul>
+                <li>1. Cliquez sur le bouton ci-dessous pour accéder à la page d'ajout du bot.</li>
+                <li>2. Connectez-vous à votre compte Discord si ce n'est pas déjà fait.</li>
+                <li>3. Sélectionnez le serveur sur lequel vous souhaitez ajouter Z.J Bot.</li>
+                <li>4. Cliquez sur "Autoriser" pour accorder les permissions nécessaires.</li>
+            </ul>
+            <a href="https://discord.gg/57v8cZf" class="join-button">Ajouter Z.J Bot à votre serveur</a>
+        </section>
+
+        <section class="commandes">
+            <h2>Commandes Slash de Modération</h2>
+            <p>Voici une liste des principales commandes slash de modération que vous pouvez utiliser avec Z.J Bot :</p>
+            <ul>
+                <li><strong>/kick [utilisateur] [raison]</strong> : Expulse un membre du serveur.</li>
+                <li><strong>/ban [utilisateur] [raison]</strong> : Banni un membre du serveur. Utilisez cette commande pour les infractions graves.</li>
+                <li><strong>/mute [utilisateur] [raison]</strong> : Réduit les capacités d'un membre (mute) en cas de comportement perturbateur.</li>
+                <li><strong>/unmute [utilisateur]</strong> : Restaure les capacités d'un membre qui a été muté.</li>
+                <li><strong>/warn [utilisateur] [raison]</strong> : Avertit un membre pour une infraction aux règles du serveur.</li>
+                <li><strong>/clear [nombre]</strong> : Supprime un certain nombre de messages dans un canal textuel.</li>
+                <li><strong>/lockdown [canal]</strong> : Verrouille un canal pour empêcher les membres d'y envoyer des messages.</li>
+                <li><strong>/unlock [canal]</strong> : Déverrouille un canal pour que les membres puissent envoyer des messages à nouveau.</li>
+                <li><strong>/report [utilisateur] [raison]</strong> : Signale un utilisateur pour un comportement inapproprié.</li>
+            </ul>
+            <p>Les commandes slash sont faciles à utiliser et offrent une interface intuitive via Discord. Tapez simplement / et Z.J Bot vous proposera toutes les commandes disponibles !</p>
+        </section>
+
+        <section class="fonctionnalites">
+            <h2>Fonctionnalités Avancées</h2>
+            <p>En plus des commandes de modération, Z.J Bot propose diverses fonctionnalités pour faciliter la gestion de votre serveur :</p>
+            <ul>
+                <li><strong>Logs de Modération</strong> : Gardez une trace des actions de modération exécutées sur votre serveur.</li>
+                <li><strong>Protection anti-spam</strong> : Empêche les utilisateurs de spammer le chat avec des messages répétitifs ou indésirables.</li>
+                <li><strong>Gestion des rôles</strong> : Gérez facilement les rôles et permissions des membres directement via des commandes.</li>
+                <li><strong>Gestion des canaux</strong> : Créez, modifiez, et gérez les canaux de votre serveur de manière simple et rapide.</li>
+            </ul>
+        </section>
+
+        <section class="support">
+            <h2>Support et Assistance</h2>
+            <p>Si vous avez des questions ou si vous avez besoin d'aide pour utiliser Z.J Bot, n'hésitez pas à rejoindre notre serveur de support officiel sur Discord :</p>
+            <a href="https://discord.gg/57v8cZf" class="join-button">Rejoindre le Support Discord</a>
+        </section>
+    </main>
+
+    <footer>
+        <center>
+            <p>© 2023-2024 Z.J Bot. Tous droits réservés. | <a href="https://discord.gg/57v8cZf">Rejoignez notre serveur de support</a></p>
+        </center>
+    </footer>
+
+    <script>
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navbar = document.querySelector('.navbar');
+
+        burgerMenu.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
