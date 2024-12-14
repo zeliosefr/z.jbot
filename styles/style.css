@@ -1,0 +1,650 @@
+/* --- Style général --- */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1e1e2f; /* Fond sombre */
+    color: #ffffff; /* Texte blanc */
+}
+
+/* --- Navbar avec effet Glassmorphism --- */
+.glass-navbar {
+    background: rgba(255, 255, 255, 0.1); /* Effet verre */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Effet de flou */
+    border-radius: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff5757;
+}
+
+/* --- Liens de navigation --- */
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #000;
+}
+
+/* --- Section principale (bannière) --- */
+.custom-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222; /* Fond de secours en cas d'échec de l'image */
+}
+
+.custom-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%); /* Assombrir l'image */
+}
+
+.banner-text {
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+/* Section d'Accueil */
+.home-section {
+    text-align: center;
+    padding: 80px 20px;
+    color: #fff;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease;
+}
+
+.home-content p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    animation: fade-in 1.2s ease;
+}
+
+/* Section Fonctionnalités */
+.features-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1e1e2f;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    color: #ff5757;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    background-color: #2a2a2e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #ff5757;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Section Invitation */
+.invite-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #111;
+}
+
+.invite-button {
+    padding: 15px 30px;
+    background-color: #7289da;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.invite-button:hover {
+    background-color: #5a73bf;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ff5757;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1e1e2f; /* Fond sombre */
+    color: #ffffff; /* Texte blanc */
+}
+
+/* Navbar */
+.glass-navbar {
+    background: rgba(255, 255, 255, 0.1); /* Effet verre */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff5757;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #1a1a2e;
+    color: #ffffff;
+}
+
+.contact-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #ff5757;
+}
+
+.contact-section p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Formulaire de contact */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.submit-button {
+    background: #ff5757;
+    color: #ffffff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #ff3b3b;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ff5757;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Bannière Personnalisée */
+.custom-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222; /* Couleur de fond en cas de problème de chargement de l'image */
+}
+
+.custom-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.banner-text {
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #2a2a2a, #1c1c1c); /* Couleur dégradée */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links .active {
+    color: #00b4d8; /* Couleur de survol ou active */
+}
+
+/* Ajustement pour petits écrans */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Cache les liens dans une vue mobile (peut être remplacé par un menu hamburger) */
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background: linear-gradient(120deg, #0d1117, #1a1a2e);
+    overflow-x: hidden;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+/* Navbar avec effet Glassmorphism */
+.glass-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 10px auto;
+    animation: slide-down 0.5s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Navbar Links */
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #000;
+}
+
+/* Icônes de la navbar */
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-link {
+    color: #fff;
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-link:hover {
+    transform: scale(1.2);
+    color: #7289da;
+}
+
+/* Section principale */
+.home-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('/image/ban.png') no-repeat center center/cover;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    animation: fade-in 1s ease;
+}
+
+.home-content p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    animation: fade-in 1.2s ease;
+}
+
+.banner {
+    max-width: 90%;
+    max-height: 300px; /* Taille limitée */
+    margin: 20px auto;
+    border-radius: 15px;
+    object-fit: cover;
+    animation: fade-in 1.5s ease;
+}
+
+.join-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #7289da;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.join-button:hover {
+    background: #5a73bf;
+    transform: scale(1.1);
+}
+
+/* Galerie d'images */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-height: 150px; /* Taille réduite */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Burger Menu */
+.burger-menu {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
