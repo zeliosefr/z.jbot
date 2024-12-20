@@ -216,7 +216,7 @@ footer a:hover {
 
 .navbar-links a:hover,
 .navbar-links .active {
-    color: #00b4d8; /* Couleur de survol ou active */
+    color: #ff3b3b; /* Couleur de survol ou active */
 }
 
 /* Ajustement pour petits écrans */
@@ -318,7 +318,7 @@ header {
 
 .icon-link:hover {
     transform: scale(1.2);
-    color: #7289da;
+    color: #000000;
 }
 
 /* Section principale */
@@ -353,7 +353,7 @@ header {
 .join-button {
     margin-top: 20px;
     padding: 10px 20px;
-    background: #7289da;
+    background: #000000;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -362,7 +362,7 @@ header {
 }
 
 .join-button:hover {
-    background: #5a73bf;
+    background: #000000;
     transform: scale(1.1);
 }
 
@@ -438,4 +438,88 @@ header {
     .burger-menu {
         display: block;
     }
+}
+/* Réinitialisation et styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #29293a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background: #2f2f30;
+    text-align: center;
+    padding: 30px 10px;
+    border-bottom: 3px solid #ff3b3b;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ff3b3b;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* Conteneur principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grille des fonctionnalités */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+/* Carte de fonctionnalité */
+.feature-card {
+    background: #162447;
+    border: 1px solid #ff3b3b;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    background: #240b0c;
+}
+
+.feature-card h2 {
+    color: #ff3b3b;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #000000;
+    color: #ccc;
+    font-size: 0.9rem;
+    border-top: 3px solid #ff3b3b;
 }
