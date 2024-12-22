@@ -1,4 +1,4 @@
-/* --- Style général --- */
+/* --- Style gÃ©nÃ©ral --- */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -63,7 +63,7 @@ body {
     color: #00b4d8;
 }
 
-/* --- Bannière --- */
+/* --- BanniÃ¨re --- */
 .custom-banner {
     position: relative;
     width: 100%;
@@ -99,7 +99,7 @@ body {
     margin: 10px 0 0;
 }
 
-/* --- Section Équipe --- */
+/* --- Section Ã‰quipe --- */
 .team-section {
     text-align: center;
     padding: 50px 20px;
@@ -169,7 +169,7 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-/* Style général */
+/* Style gÃ©nÃ©ral */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -298,7 +298,7 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-/* Bannière Personnalisée */
+/* BanniÃ¨re PersonnalisÃ©e */
 .custom-banner {
     position: relative;
     width: 100%;
@@ -308,7 +308,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #222; /* Couleur de fond en cas de problème de chargement de l'image */
+    background-color: #222; /* Couleur de fond en cas de problÃ¨me de chargement de l'image */
 }
 
 .custom-banner img {
@@ -341,7 +341,7 @@ footer a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: linear-gradient(to right, #2a2a2a, #1c1c1c); /* Couleur dégradée */
+    background: linear-gradient(to right, #2a2a2a, #1c1c1c); /* Couleur dÃ©gradÃ©e */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
@@ -390,10 +390,10 @@ footer a:hover {
     color: #00b4d8; /* Couleur de survol ou active */
 }
 
-/* Ajustement pour petits écrans */
+/* Ajustement pour petits Ã©crans */
 @media (max-width: 768px) {
     .navbar-links {
-        display: none; /* Cache les liens dans une vue mobile (peut être remplacé par un menu hamburger) */
+        display: none; /* Cache les liens dans une vue mobile (peut Ãªtre remplacÃ© par un menu hamburger) */
     }
 
     .burger-menu {
@@ -475,7 +475,7 @@ header {
     color: #000;
 }
 
-/* Icônes de la navbar */
+/* IcÃ´nes de la navbar */
 .icons {
     display: flex;
     gap: 15px;
@@ -510,7 +510,7 @@ header {
 
 .banner {
     max-width: 90%;
-    max-height: 300px; /* Taille limitée */
+    max-height: 300px; /* Taille limitÃ©e */
     margin: 20px auto;
     border-radius: 15px;
     object-fit: cover;
@@ -543,7 +543,7 @@ header {
 
 .image-gallery img {
     width: 100%;
-    max-height: 150px; /* Taille réduite */
+    max-height: 150px; /* Taille rÃ©duite */
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
